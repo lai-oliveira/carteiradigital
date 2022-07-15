@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.br.laisa_macedo.carteiradigital.MainActivity;
+import com.br.laisa_macedo.carteiradigital.app.MainActivity;
 import com.br.laisa_macedo.carteiradigital.R;
 import com.br.laisa_macedo.carteiradigital.helper.FirebaseHelper;
 

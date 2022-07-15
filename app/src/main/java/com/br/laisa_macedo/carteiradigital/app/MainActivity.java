@@ -1,8 +1,10 @@
-package com.br.laisa_macedo.carteiradigital;
+package com.br.laisa_macedo.carteiradigital.app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.br.laisa_macedo.carteiradigital.R;
 
 
 public class MainActivity extends AppCompatActivity {

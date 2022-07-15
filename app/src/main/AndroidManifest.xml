@@ -24,7 +24,7 @@
         <activity android:name=".autenticacao.RecuperarContaActivity" />
         <activity android:name=".autenticacao.LoginActivity"/>
         <activity android:name=".autenticacao.CadastroActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".app.MainActivity" />
     </application>
 
 </manifest>

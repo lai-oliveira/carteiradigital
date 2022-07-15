@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.br.laisa_macedo.carteiradigital.MainActivity;
 import com.br.laisa_macedo.carteiradigital.R;
 import com.br.laisa_macedo.carteiradigital.autenticacao.LoginActivity;
 import com.br.laisa_macedo.carteiradigital.helper.FirebaseHelper;
