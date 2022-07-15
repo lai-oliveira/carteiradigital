@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "85583200705",
+    "project_id": "carteira-digital-f539d",
+    "storage_bucket": "carteira-digital-f539d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85583200705:android:e1e95ca24c02ab355c6f40",
+        "android_client_info": {
+          "package_name": "com.br.laisa_macedo.carteiradigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85583200705-jea5b24o01276idffuchqvfag8ub1k9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.br.laisa_macedo.carteiradigital",
+            "certificate_hash": "205e44de79492aa93de8bb09f4fb22a9d8c318c1"
+          }
+        },
+        {
+          "client_id": "85583200705-id35mrrk9hof0uo8sp1ou094g004o080.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM0RDMXOCJTwp1Qu0aO068gaed6QJOdVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85583200705-id35mrrk9hof0uo8sp1ou094g004o080.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
