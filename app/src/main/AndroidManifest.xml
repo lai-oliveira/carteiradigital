@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarteiraDigital"
         tools:targetApi="31">
-        <activity android:name=".app.SplashActivity"
+        <activity
+            android:name=".deposito.DepositoFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".autenticacao.RecuperarContaActivity" />
-        <activity android:name=".autenticacao.LoginActivity"/>
+        <activity android:name=".autenticacao.LoginActivity" />
         <activity android:name=".autenticacao.CadastroActivity" />
         <activity android:name=".app.MainActivity" />
     </application>
