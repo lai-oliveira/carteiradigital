@@ -1,5 +1,7 @@
 package com.br.laisa_macedo.carteiradigital.model;
 
+import com.br.laisa_macedo.carteiradigital.helper.FirebaseHelper;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
 public class Usuario {
@@ -13,6 +15,14 @@ public class Usuario {
     private  String senha;
 
     public Usuario(){
+
+    }
+    public void atualizarSaldo(){
+        DatabaseReference usuarioRef = FirebaseHelper.getDatabaseReference()
+                .child("usuario")
+                .child(getId())
+                .child("saldo");
+        usuarioRef.setValue(getSaldo());
 
     }
 

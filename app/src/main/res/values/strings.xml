@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Carteira Digital</string>
+    <string name="text_valor">R$ %1$s</string>
+
 </resources>
