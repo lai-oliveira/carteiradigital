@@ -27,8 +27,19 @@ public class DepositoReciboActivity extends AppCompatActivity {
         setContentView(R.layout.activity_deposito_recibo);
 
         configToolbar();
+
         iniciaComponentes();
+
+        getDeposito();
+
+        configCliques();
+
     }
+
+    private void configCliques(){
+        findViewById(R.id.btnOk).setOnClickListener(v -> finish());
+    }
+
     private void getDeposito(){
         String idDeposito = (String) getIntent().getSerializableExtra("idDeposito");
 
@@ -47,26 +58,23 @@ public class DepositoReciboActivity extends AppCompatActivity {
 
             }
         });
-
     }
+
     private void configDados(Deposito deposito){
         textCodigo.setText(deposito.getId());
-        textData.setText(GetMask.getDate(deposito.getData(),3));
-        textValor.setText(getString(R.string.text_valor,GetMask.getValor(deposito.getValor())));
-
+        textData.setText(GetMask.getDate(deposito.getData(), 3));
+        textValor.setText(getString(R.string.text_valor, GetMask.getValor(deposito.getValor())));
     }
 
     private void configToolbar(){
         TextView textTitulo = findViewById(R.id.textTitulo);
         textTitulo.setText("Comprovante");
-
-
     }
+
     private void iniciaComponentes(){
         textCodigo = findViewById(R.id.textCodigo);
         textData = findViewById(R.id.textData);
-        textValor = findViewById(R.id.edtValor);
-
+        textValor = findViewById(R.id.textValor);
     }
 
 }
