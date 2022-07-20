@@ -1,10 +1,17 @@
 package com.br.laisa_macedo.carteiradigital.model;
 
+import android.content.Intent;
+import android.view.View;
+import android.widget.Toast;
+
+import com.br.laisa_macedo.carteiradigital.app.MainActivity;
 import com.br.laisa_macedo.carteiradigital.helper.FirebaseHelper;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
 
     private String id;
     private String nome;

@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.br.laisa_macedo.carteiradigital.R;
 import com.br.laisa_macedo.carteiradigital.deposito.DepositoFormActivity;
 import com.br.laisa_macedo.carteiradigital.helper.FirebaseHelper;
 import com.br.laisa_macedo.carteiradigital.helper.GetMask;
 import com.br.laisa_macedo.carteiradigital.model.Usuario;
+import com.br.laisa_macedo.carteiradigital.recarga.RecargaFormActivity;
 import com.br.laisa_macedo.carteiradigital.usuario.MinhaContaActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -76,7 +78,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.minhaConta).setOnClickListener(v -> {
-            startActivity(new Intent(this, MinhaContaActivity.class));
+       if (usuario != null){
+           Intent intent = new Intent(this, MinhaContaActivity.class);
+           intent.putExtra("usuario",usuario);
+           startActivity(intent);
+
+       }else{
+           Toast.makeText(this, "Ainda estamos recuperando as informações", Toast.LENGTH_SHORT).show();
+       }
+        });
+
+        findViewById(R.id.cardRecarga).setOnClickListener(view -> {
+            startActivity(new Intent(this, RecargaFormActivity.class));
         });
     }
 
