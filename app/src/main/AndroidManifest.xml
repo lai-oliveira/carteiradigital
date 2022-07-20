@@ -15,6 +15,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarteiraDigital"
         tools:targetApi="31">
+
+        <activity
+            android:name=".cobrar.ReciboPagamentoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cobrar.PagarCobrancaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cobrar.CobrancaConfirmaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cobrar.CobrarFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".notificaoes.NotificacoesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".extrato.ExtratoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".transferencia.TransferenciaReciboActivity"
+            android:exported="false" />
+        <activity
+            android:name=".transferencia.TransferenciaConfirmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".transferencia.SelecionarUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".transferencia.TransferenciaFormActivity"
+            android:exported="false" />
         <activity
             android:name=".recarga.RecargaFormActivity"
             android:exported="false" />

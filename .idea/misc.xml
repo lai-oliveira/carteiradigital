@@ -7,11 +7,16 @@
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_alert_dialog.xml" value="0.1965" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_btn.xml" value="0.1165" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_edit.xml" value="0.226" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_edit_pesquisa.xml" value="0.169" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_entrada.xml" value="0.324" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_notificacao.xml" value="0.324" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/bg_saida.xml" value="0.324" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_back.xml" value="0.2485" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_backs_background.xml" value="0.2075" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_backs_foreground.xml" value="0.2575" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_celular_login.xml" value="0.126" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_cobrar.xml" value="0.2575" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_delete.xml" value="0.299" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_deposito.xml" value="0.1335" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_email_background.xml" value="0.226" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_email_foreground.xml" value="0.226" />
@@ -20,6 +25,8 @@
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_emails_foreground.xml" value="0.226" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_historico.xml" value="0.164" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_launcher_background.xml" value="0.226" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_logo.xml" value="0.324" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_notifications.xml" value="0.324" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_recarga_cel.xml" value="0.2575" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_sair.xml" value="0.2575" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_senhaLogin_background.xml" value="0.226" />
@@ -30,16 +37,31 @@
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_user_black.xml" value="0.2575" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/drawable/ic_user_blue.xml" value="0.126" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_cadastro.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_cobranca_confirma.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_cobrar_form.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_deposito_form.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_deposito_recibo.xml" value="0.1838905775075988" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_extrato.xml" value="0.2953125" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_minha_conta.xml" value="0.25769927536231885" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_notificacoes.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_pagar_cobranca.xml" value="0.22" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_recarga_form.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_recarga_recibo.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_recibo_pagamento.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_recuperar_conta.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_selecionar_usuario.xml" value="0.22" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_splash.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_transferencia_confirma.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_transferencia_form.xml" value="0.25769927536231885" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_transferencia_recibo.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/activity_transferir_usuario.xml" value="0.25769927536231885" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/adapter_extrato.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/adapter_notificacao.xml" value="0.2953125" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/adapter_usuario.xml" value="0.25769927536231885" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/divisor.xml" value="0.3134057971014493" />
+        <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/layout_dialog.xml" value="0.2953125" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/layout_dialog_info.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/toolbar.xml" value="0.3134057971014493" />
         <entry key="..\:/Users/016742631/AndroidStudioProjects/CarteiraDigital/app/src/main/res/layout/toolbar_padrao.xml" value="0.2536231884057971" />
