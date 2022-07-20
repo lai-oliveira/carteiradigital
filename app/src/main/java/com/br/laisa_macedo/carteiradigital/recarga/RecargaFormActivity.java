@@ -9,30 +9,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.blackcat.currencyedittext.CurrencyEditText;
 import com.br.laisa_macedo.carteiradigital.R;
-import com.br.laisa_macedo.carteiradigital.deposito.DepositoReciboActivity;
 import com.br.laisa_macedo.carteiradigital.helper.FirebaseHelper;
-import com.br.laisa_macedo.carteiradigital.model.Deposito;
 import com.br.laisa_macedo.carteiradigital.model.Extrato;
+import com.br.laisa_macedo.carteiradigital.model.Recarga;
 import com.br.laisa_macedo.carteiradigital.model.Usuario;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ServerValue;
+import com.santalu.maskara.widget.MaskEditText;
 
 import java.util.Locale;
 
 public class RecargaFormActivity extends AppCompatActivity {
 
     private CurrencyEditText edtValor;
-    private EditText edtTelefone;
+    private MaskEditText edtTelefone;
     private AlertDialog dialog;
     private ProgressBar progressBar;
-
     private Usuario usuario;
 
     @Override
@@ -49,7 +47,7 @@ public class RecargaFormActivity extends AppCompatActivity {
     public void validaDados(View view){
 
         double valor = (double) edtValor.getRawValue() / 100;
-        String numero = edtTelefone.getText().toString().trim();
+        String numero = edtTelefone.getUnMasked();
 
         if(valor >= 15){
             if(!numero.isEmpty()){
@@ -57,7 +55,7 @@ public class RecargaFormActivity extends AppCompatActivity {
 
                     progressBar.setVisibility(View.VISIBLE);
 
-                    Toast.makeText(this, "Tudo certo!", Toast.LENGTH_SHORT).show();
+                    salvarExtrato(valor, numero);
 
                 }else {
                     showDialog("O número digitado está incompleto.");
@@ -94,45 +92,43 @@ public class RecargaFormActivity extends AppCompatActivity {
 
     }
 
-    private void salvarDeposito(Extrato extrato) {
+    private void salvarRecarga(Extrato extrato, String numero) {
 
-        Deposito deposito = new Deposito();
-        deposito.setId(extrato.getId());
-        deposito.setValor(extrato.getValor());
+        Recarga recarga = new Recarga();
+        recarga.setId(extrato.getId());
+        recarga.setNumero(numero);
+        recarga.setValor(extrato.getValor());
 
-        DatabaseReference depositoRef = FirebaseHelper.getDatabaseReference()
-                .child("depositos")
-                .child(deposito.getId());
+        DatabaseReference recargaRef = FirebaseHelper.getDatabaseReference()
+                .child("recargas")
+                .child(recarga.getId());
 
-        depositoRef.setValue(deposito).addOnCompleteListener(task -> {
+        recargaRef.setValue(recarga).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
 
-                DatabaseReference updateDeposito = depositoRef
+                DatabaseReference updateRecarga = recargaRef
                         .child("data");
-                updateDeposito.setValue(ServerValue.TIMESTAMP);
+                updateRecarga.setValue(ServerValue.TIMESTAMP);
 
-                usuario.setSaldo(usuario.getSaldo() + deposito.getValor());
-                usuario.atualizarSaldo();
-
-                Intent intent = new Intent(this, DepositoReciboActivity.class);
-                intent.putExtra("idDeposito", deposito.getId());
+                Intent intent = new Intent(this, RecargaReciboActivity.class);
+                intent.putExtra("idRecarga", recarga.getId());
                 startActivity(intent);
                 finish();
 
             }else {
                 progressBar.setVisibility(View.GONE);
-                showDialog("Não foi possível efetuar o deposito, tente mais tarde.");
+                showDialog("Não foi possível efetuar a recarga, tente mais tarde.");
             }
         });
 
     }
 
-    private void salvarExtrato(double valorDeposito){
+    private void salvarExtrato(double valor, String numero){
 
         Extrato extrato = new Extrato();
-        extrato.setOperacao("DEPOSITO");
-        extrato.setValor(valorDeposito);
-        extrato.setTipo("ENTREDA");
+        extrato.setOperacao("RECARGA");
+        extrato.setValor(valor);
+        extrato.setTipo("SAIDA");
 
         DatabaseReference extratoRef = FirebaseHelper.getDatabaseReference()
                 .child("extratos")
@@ -145,10 +141,10 @@ public class RecargaFormActivity extends AppCompatActivity {
                         .child("data");
                 updateExtrato.setValue(ServerValue.TIMESTAMP);
 
-                salvarDeposito(extrato);
+                salvarRecarga(extrato, numero);
 
             }else {
-                showDialog("Não foi possível efetuar o deposito, tente mais tarde.");
+                showDialog("Não foi possível efetuar a recarga, tente mais tarde.");
             }
         });
 
